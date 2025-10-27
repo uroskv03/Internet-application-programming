@@ -1,0 +1,36 @@
+<h4>Trenutne vrednosti</h4>
+
+<img [src]="'http://localhost:4000/uploads/' + user.slika">
+
+<div class="Podaci"> 
+  <div class="pod">  Ime:   <br> {{user.ime}}  </div>
+  <div class="pod"> Prezime:  <br>{{user.prezime}} </div> 
+  <div class="pod">  Adresa:   <br> {{user.adresa}} </div>
+  <div class="pod">  Mejl: <br> {{user.mejl}} </div>
+  <div class="pod">  Telefon: <br> {{user.telefon}} </div>
+  <div class="pod">  Kartica: <br> {{user.brojKredinteKartice}} </div>
+</div>
+
+<hr>
+<h4>Unesi izmene </h4>
+<div class="forma">
+Ime: <input type="text" [(ngModel)]="userNov.ime">
+
+Prezime: <input type="text" [(ngModel)]="userNov.prezime">
+
+Adresa: <input type="text" [(ngModel)]="userNov.adresa">
+
+Telefon: <input type="text" [(ngModel)]="userNov.telefon">
+
+Mejl adresa: <input type="text" [(ngModel)]="userNov.mejl">
+
+Profilna Slika: 
+  <input type="file"
+         accept=".jpg,.jpeg,.png"
+         (change)="validirajSliku($event)">
+
+Broj kreditne kartice: <input type="number" [(ngModel)]="userNov.brojKredinteKartice" (ngModelChange)="promenaKaritce()"> 
+
+<button (click)="promeni()">Promeni</button>
+<button (click)="odustani()">Odustani</button>
+<br>

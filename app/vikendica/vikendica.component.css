@@ -1,0 +1,53 @@
+:host ::ng-deep .mat-horizontal-stepper-header-container {  
+  display: flex;
+  justify-content: space-around;  /*ravnomerno po celoj traci rasporedi korake*/
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+}
+
+:host ::ng-deep .mat-step-header {
+  flex: 1;  /*svaki korak zauzima isto prostora*/
+  justify-content: center;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+:host ::ng-deep .mat-step-header.mat-active {
+  border-color: #1976d2; /* plava linija ispod aktivnog stepa */
+  font-weight: 600;
+  color: #1976d2;
+}
+
+:host ::ng-deep .mat-step-header .mat-step-icon {
+  display: none; /* sakriva brojeve u krugovima */
+}
+
+:host ::ng-deep .mat-step-header .mat-step-label {
+  font-size: 1rem; 
+  text-transform: uppercase;  /*da bude velikim slovima tekts DETALJI i PLACANJE */
+  letter-spacing: 0.5px;
+}
+
+:host ::ng-deep .mat-step-header .mat-step-label-selected {
+  color: #1976d2;
+}
+
+
+.galerija-kontejner {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    align-items: center;  /*ovo namesta da ostane originalna velicina slike*/
+
+}
+
+.galerija-kontejner img {
+  border: 1px solid #eee;
+  height: auto;
+  width: 100%;
+  /*width: 200px; */
+
+}

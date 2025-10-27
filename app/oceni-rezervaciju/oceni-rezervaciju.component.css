@@ -1,0 +1,42 @@
+textarea {
+    width: 300px; 
+    max-width: 100%;
+    min-height: 80px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* centriranje*/
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.zvezde {
+    display: block;
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+.zvezde .fa {
+    font-size: 1.5em; /* uvecane zvezde*/
+    color: #FFC300; 
+    cursor: pointer;
+    margin: 0 2px;
+    transition: color 0.1s;
+}
+
+.dugmici {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.dugmici button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #bbb;
+    margin: 0 5px; 
+
+}

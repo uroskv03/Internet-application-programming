@@ -1,0 +1,17 @@
+<div class="forma">
+<label>Korisnicko ime:  </label> 
+<input type="text" [(ngModel)]="korIme">
+
+<label>Stara lozinka: </label> 
+<input type="password" [(ngModel)]="lozinka">
+
+<label>Nova lozinka: </label> 
+<input type="password" [(ngModel)]="nova1">
+
+<label>Ponovljena nova lozinka: </label> 
+<input type="password" [(ngModel)]="nova2">
+
+<button (click)="promeni()">Promeni</button>
+<span class="msg">{{message}}</span>
+<br>
+</div>

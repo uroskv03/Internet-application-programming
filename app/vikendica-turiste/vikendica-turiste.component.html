@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<table border="1">
+        <thead>
+        <tr>
+            <th (click)="sortirajNaziv()" class="klik">Naziv </th> 
+            
+            <th (click)="sortirajMesto()" class="klik">Mesto </th>
+            
+            <th>Ocena</th>
+            <th>Zvezdice</th>
+        </tr>
+    </thead>
+@for(v of Vikendice; track v.idV){
+    <tr>
+        <td>
+            <a [routerLink]="['/vikendica', v.idV]">{{ v.naziv }}</a>
+        </td>
+        <td>{{v.mesto}}</td>
+        <td>{{v.ocena.toFixed(2)}} </td>
+        <td><span class="zvezde">
+        @for (star of getZvezde(v.ocena); track $index) {
+            <i class="fa {{ star }}"></i> 
+        }
+         </span>
+        </td>
+
+    </tr>
+}
+</table>
+<form class="trazi">
+    <input type = "text" name = "nazivParam" [(ngModel)]="nazivParam">
+    <button (click) = "traziNaziv()"> TraziNaziv </button>
+    <br>
+    <input type = "text" name = "mestoParam" [(ngModel)]="mestoParam">
+    <button (click) = "traziMesto()"> TraziMesto </button>
+<br>
+<button (click) = "trazi()"> Trazi </button>
+</form>
+<br>

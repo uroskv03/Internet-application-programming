@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<textarea  placeholder= "Komentar" [(ngModel)]="rezervacija.komentar"></textarea>
+<span class="zvezde">
+    Ocena:
+    @for (star of getZvezde(rezervacija.ocena); track $index) {
+        <i 
+            class="fa {{ star }}"                
+            (click)="postaviOcenu($index + 1)"  style="cursor: pointer;"            
+            title="Oceni sa {{ $index + 1 }}"></i> 
+    }
+</span>
+<div class="dugmici">
+<button (click) = "potvrdi()">Potvrdi</button>
+<button (click) = "odustani()">Odustani</button>
+</div>
+<br>

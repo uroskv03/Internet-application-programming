@@ -1,0 +1,48 @@
+<div class="forma">
+    <label>Korisnicko ime:</label> 
+    <input type="text" [(ngModel)]="korIme">
+    <label>Lozinka:</label>
+    <input type="password" [(ngModel)]="lozinka">
+    <button (click)="login()">Login</button>
+    <span  class="msg">{{message}}</span>
+    <a routerLink="register">Register</a>
+    <a routerLink="promeniLozinku">Promeni Lozinku</a>
+</div>
+
+<hr/>
+<div class="Podaci">
+    <div class="pod">Broj vikendica: <br>{{sveVikendice.length}} </div>
+    <div class="pod">Broj vlasnika:  <br>{{sviVlasnici.length}} </div>
+    <div class="pod">Broj turista:   <br>{{sviTuristi.length}} </div> 
+</div>
+<div class="Podaci">
+    <div class="pod">Broj rezervacija poslednjih 24h:<br> {{brRez1}} </div>
+    <div class="pod">Broj rezervacija poslednjih 7 dana:<br> {{brRez7}} </div>
+    <div class="pod">Broj rezervacija poslednjih 30dana: <br>{{brRez30}} </div>
+</div>
+<br>
+<table border="1">
+        <thead>
+        <tr>
+            <th (click)="sortirajNaziv()" class="klik">Naziv </th> 
+            <th (click)="sortirajMesto()" class="klik">Mesto </th>
+        </tr>
+    </thead>
+@for(v of Vikendice; track v.idV){
+    <tr>
+        <td>{{v.naziv}}</td>
+        <td>{{v.mesto}}</td>
+    </tr>
+}
+</table>
+
+<form class="trazi">
+    <input type = "text" name = "nazivParam" [(ngModel)]="nazivParam">
+    <button (click) = "traziNaziv()"> TraziNaziv </button>
+    <br>
+    <input type = "text" name = "mestoParam" [(ngModel)]="mestoParam">
+    <button (click) = "traziMesto()"> TraziMesto </button>
+<br>
+<button (click) = "trazi()"> Trazi </button>
+</form>
+<br>
