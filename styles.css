@@ -1,0 +1,167 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+body{
+    background-color: lightgray;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.Podaci {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.pod {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.msg{
+    color: red;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select {
+    border-radius: 8px; 
+    padding: 3px 5px; 
+    border: 1px solid #ccc;  
+    box-sizing: border-box;  /* zbog pravilnog racunanja pading*/
+}
+
+table {
+    max-width: 100%;
+    min-width: 40%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color:#4a5568; 
+    color: white;
+    padding: 0.5rem;
+}
+
+.klik {
+    cursor: pointer;
+}
+
+.forma {
+    display: grid;
+    grid-template-columns: 30% auto; /* leva kolona za labele, desna za inpute */
+    row-gap: 10px;                     /* razmak po redovima */
+    column-gap: 5%;
+    align-items: center;               /* vertikalno poravnanje */
+    margin-left: 2%;                 /* poravnato levo */
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+}
+
+.forma label {
+    font-weight: bold;
+}
+
+.trazi button{
+    padding: 1px 40px; 
+}
+
+.vik button{
+    padding: 3px 30px; 
+}
+
+table button{
+    padding: 3px 8px
+}
+
+button{
+    cursor: pointer;
+}
+
+.Profil {
+    display: flex; 
+    gap: 30px; 
+    align-items: flex-start;
+    max-width: 800px; 
+    margin: 30px auto; 
+    padding: 25px;
+    background-color: #ffffff; 
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.mat-step-header {
+    background-color: lightgray !important; 
+}
+
+.mat-horizontal-content-container {
+    background-color: lightgray !important;
+}
+.mat-stepper-horizontal {
+    background-color: lightgray !important;
+}
+
+.mat-stepper-label-content {
+
+    background-color: lightgray !important; 
+}
+
+.menu {
+    background-color:#4a5568; 
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; /* da budu jedna pored druge */
+    justify-content: center; 
+    flex-wrap: wrap; /*da moze u nov red da ide kad se smanjuje*/
+}
+
+.menu li {
+    margin: 10px 1%; 
+    text-align: center;
+    
+}
+
+/* Stilizacija linkova */
+.menu a {
+    color: #ecf0f1; 
+    text-decoration: none; 
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer; 
+}
+
+
+.menu a:hover {
+    background-color: #34495e; /* Malo tamija pozadina za hover */
+    color: #ffffff;
+}
+
+/* Stilizuje aktivni link (routerLinkActive) */
+.menu a.active {
+    background-color: #1abc9c; 
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
