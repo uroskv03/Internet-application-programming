@@ -1,0 +1,21 @@
+<br>
+@for(v of vikendice; track v.idV) {
+    
+    <h3>{{ v.naziv }}</h3>
+
+    <div class="chart-section"> 
+
+        <div class="bar-chart-container">
+            <h4>Rezervacije po mesecima</h4>
+            <canvas id="barChart-{{v.idV}}"></canvas>
+        </div>
+
+        <div class="pie-chart-container">
+            <h4>Odnos vikend / radna nedelja</h4>
+            <canvas id="pieChart-{{v.idV}}"></canvas>
+        </div>
+
+    </div>
+
+        <hr>
+}

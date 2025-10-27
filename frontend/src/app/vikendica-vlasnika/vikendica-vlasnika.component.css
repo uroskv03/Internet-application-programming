@@ -1,0 +1,27 @@
+.galerija-kontejner {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    align-items: center /*ovo namesta da ostane originalna velicina slike i da bude na sredini*/
+}
+
+.slika-sa-dugmetom {
+    display: block; 
+    /*width: 200px; */
+    text-align: center;
+}
+
+.slika-sa-dugmetom img {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 5px; 
+    border: 1px solid #eee;
+}
+
+
+.slika-sa-dugmetom button {
+    width: 80%;
+    padding: 5px;
+}

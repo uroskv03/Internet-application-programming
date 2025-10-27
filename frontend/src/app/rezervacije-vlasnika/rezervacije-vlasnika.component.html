@@ -1,0 +1,31 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>Turista</th>
+            <th>Datum Početka</th>
+            <th>Datum Kraja</th>
+            <th>Naziv vikendice</th>
+            <th>Dugmici</th>
+            <th>Komentar</th>
+        </tr>
+    </thead>
+@for(r of rezervacije; track r.idR){
+    <tr>
+        <td>{{r.turista}}</td>
+        <td>{{r.datumPocetka}}</td>
+        <td>{{r.datumKraja}}</td>
+        <td>{{r.nazivV}}</td>
+        <td>
+            <button (click) = prihvati(r)>Prihvati</button>
+            <button (click) = odbi(r)>Odbi</button>
+        </td>
+        <td>
+            <textarea [(ngModel)]="r.komentarVlasnika"></textarea>
+        </td>
+    </tr>
+}
+</table>
+<br>
+<h2>Kalendar rezervacija</h2>
+<div #calendar></div>
+    
