@@ -1,6 +1,6 @@
 # Full-stack Web System: Mountain Cabin Rental
 
-# Overview
+## Overview
 
 This project is a full-stack web application designed for managing mountain cabin rentals.
 The system implements role-based access control and a complete reservation workflow using a modern web stack.
