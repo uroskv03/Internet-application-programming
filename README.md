@@ -29,17 +29,11 @@ The system supports three distinct roles:
 
 User registration, login, and password change
 
-Role-Based Access Control (RBAC)
-
 Full reservation workflow:
 
 1) Tourist submits booking request
 2) Owner approves or denies the request
 3) Tourist leaves rating and/or comment after completion
-
-Structured and validated REST endpoints
-
-Persistent data storage with MongoDB
 
 # User Interface
 
@@ -51,4 +45,3 @@ Intuitive navigation and menu structure
 
 Dedicated Logout functionality
 
-Responsive design principles
