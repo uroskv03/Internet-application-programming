@@ -1,11 +1,54 @@
 # Full-stack Web System: Mountain Cabin Rental
 
-The application was built with Angular, using a Node.js/Express backend and MongoDB for data persistence.
+# Overview
 
-The system supports three distinct user roles: Tourist, Cabin Owner and Administrator.
+This project is a full-stack web application designed for managing mountain cabin rentals.
+The system implements role-based access control and a complete reservation workflow using a modern web stack.
 
-The landing page provides primary options for login, registration and password change.
+# Architecture
 
-The complete reservation workflow includes tourist booking, followed by the owner’s approval/denial, and finally the tourist’s ability to leave a rating and/or comment upon successful completion.
+Frontend: Angular
 
-The user interface features a uniform design across all pages, including a consistent header, footer, and intuitive navigation and menu with a dedicated logout option.
+Backend: Node.js with Express
+
+Database: MongoDB
+
+Communication: HTTP-based API
+
+The application follows a typical client-server architecture with clear separation of concerns between presentation, business logic, and persistence layers.
+
+# User Roles
+
+The system supports three distinct roles:
+
+1) Tourist – browses cabins, makes reservations, leaves ratings and comments
+2) Cabin Owner – manages properties and approves or denies booking requests
+3) Administrator – manages users and system-level operations
+
+# Core Features
+
+User registration, login, and password change
+
+Role-Based Access Control (RBAC)
+
+Full reservation workflow:
+
+1) Tourist submits booking request
+2) Owner approves or denies the request
+3) Tourist leaves rating and/or comment after completion
+
+Structured and validated REST endpoints
+
+Persistent data storage with MongoDB
+
+# User Interface
+
+Consistent layout across all pages
+
+Centralized Header and Footer components
+
+Intuitive navigation and menu structure
+
+Dedicated Logout functionality
+
+Responsive design principles
