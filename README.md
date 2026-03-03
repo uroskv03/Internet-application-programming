@@ -1,4 +1,4 @@
-#Full-stack Web System: Mountain Cabin Rental
+# Full-stack Web System: Mountain Cabin Rental
 
 The application was built with Angular, using a Node.js/Express backend and MongoDB for data persistence.
 The system supports three distinct user roles: Tourist, Cabin Owner and Administrator.
