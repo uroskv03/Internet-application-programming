@@ -5,7 +5,7 @@
 This project is a full-stack web application designed for managing mountain cabin rentals.
 The system implements role-based access control and a complete reservation workflow using a modern web stack.
 
-# Architecture
+## Architecture
 
 Frontend: Angular
 
@@ -17,7 +17,7 @@ Communication: HTTP-based API
 
 The application follows a typical client-server architecture with clear separation of concerns between presentation, business logic, and persistence layers.
 
-# User Roles
+## User Roles
 
 The system supports three distinct roles:
 
@@ -25,7 +25,7 @@ The system supports three distinct roles:
 2) Cabin Owner – manages properties and approves or denies booking requests
 3) Administrator – manages users and system-level operations
 
-# Core Features
+## Core Features
 
 User registration, login, and password change
 
@@ -35,7 +35,7 @@ Full reservation workflow:
 2) Owner approves or denies the request
 3) Tourist leaves rating and/or comment after completion
 
-# User Interface
+## User Interface
 
 Consistent layout across all pages
 
