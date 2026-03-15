@@ -26,13 +26,13 @@ Full reservation workflow:
 
 ## User Interface
 
-Consistent layout across all pages
+*  Consistent layout across all pages
 
-Centralized Header and Footer components
+*  Centralized Header and Footer components
 
-Intuitive navigation and menu structure
+*  Intuitive navigation and menu structure
 
-Dedicated Logout functionality
+*  Dedicated Logout functionality
 
 
 ## Architecture
